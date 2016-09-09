@@ -1,0 +1,50 @@
+@charset="utf-8";
+*{
+    border:0;
+    position: 0;
+}
+body{
+    text-align: center;
+}
+
+#label{
+    border:1px solid #ccc;
+    background-color: #eee;
+    text-align:center;
+    height:300px;
+    width:300px;
+    margin:20px auto;
+    position: relative;
+}
+
+#get-image{
+    position: absolute;
+}
+
+#edit-pic{
+    position: absolute;
+    display: none;
+    background: #aaa;
+}
+
+#cover-box{
+    position: absolute;
+    z-index:9999;       /*z-index属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。*/
+    display: none;
+}
+
+/*图片的预览*/
+#show-edit{
+    margin: 0 auto;
+    display: inline-block;
+}
+
+/*查看最后的图片生成结果*/
+#show-pic{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #000;
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+}
